@@ -9,7 +9,7 @@
  * drawn but that is not the case. What's really happening is the entire "scene"
  * is being drawn over and over, presenting the illusion of animation.
  *
- * This engine makes the canvas' context (ctx) object globally available to make 
+ * This engine makes the canvas' context (ctx) object globally available to make
  * writing app.js a little simpler to work with.
  */
 
@@ -22,7 +22,8 @@ var Engine = (function(global) {
         win = global.window,
         canvas = doc.createElement('canvas'),
         ctx = canvas.getContext('2d'),
-        lastTime;
+        lastTime,
+        id;
 
     canvas.width = 505;
     canvas.height = 606;
@@ -55,7 +56,7 @@ var Engine = (function(global) {
         /* Use the browser's requestAnimationFrame function to call this
          * function again as soon as the browser is able to draw another frame.
          */
-        win.requestAnimationFrame(main);
+         win.requestAnimationFrame(main);
     }
 
     /* This function does some initial setup that should only occur once,
@@ -117,7 +118,7 @@ var Engine = (function(global) {
             numRows = 6,
             numCols = 5,
             row, col;
-        
+
         // Before drawing, clear existing canvas
         ctx.clearRect(0,0,canvas.width,canvas.height)
 
@@ -162,6 +163,8 @@ var Engine = (function(global) {
      */
     function reset() {
         // noop
+        // Before drawing, clear existing canvas
+        ctx.clearRect(0,0,canvas.width,canvas.height)
     }
 
     /* Go ahead and load all of the images we know we're going to need to

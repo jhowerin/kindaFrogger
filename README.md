@@ -1,6 +1,16 @@
-frontend-nanodegree-arcade-game
-===============================
+# Kinda' Frogger game
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+This is a game similar to frogger[http://www.frogger.net/].<br>
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+## Game Play  
+The goal of Kinda' Frogger is to move across the street from the grass to the water, without getting run over by a bug!<br>
+
+The user can only move up, down, left or right using the arrow keys on the keyboard. If a player gets smashed by a bug, then the game is over. If a player makes it to the water, then the player wins!
+
+## How to download the game  
+The game may be cloned using this comamnd
+````git clone xxx
+````
+
+## How to play the Game
+After you have downloaded the repo, point your browser to the index.html file of the repo you just downloaded. The game window will open and you can now play.<br>
